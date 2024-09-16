@@ -1,6 +1,6 @@
 import { Add, Delete, Remove } from "@mui/icons-material";
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 
 const CartItem = ({
   id,
@@ -10,7 +10,31 @@ const CartItem = ({
   image,
   category,
   deleteItem,
+  cart,
+  setCart,
 }) => {
+
+  
+  const increase = () => {
+    const updatedCart = cart.map((item) => {
+      if (item.id === id) {
+        return { ...item, quantity: item.quantity + 1 };
+      }
+      return item;
+    });
+    setCart(updatedCart);
+  };
+
+  const decrease = () => {
+    const updatedCart = cart.map((item) => {
+      if (item.id === id && item.quantity > 1) {
+        return { ...item, quantity: item.quantity - 1 };
+      }
+      return item;
+    });
+    setCart(updatedCart);
+  };
+
   return (
     <div className="cartItem">
       <img src={image} alt="" className="cartItem_img" />
@@ -19,11 +43,11 @@ const CartItem = ({
         <p className="cartItem_text">category: {category}</p>
       </div>
       <div className="cartItem_middle">
-        <Button variant="outlined">
+        <Button onClick={decrease} variant="outlined">
           <Remove />
         </Button>
         <p className="cartItem_quantity">{quantity}</p>
-        <Button variant="outlined">
+        <Button onClick={increase} variant="outlined">
           <Add />
         </Button>
       </div>

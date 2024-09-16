@@ -1,8 +1,81 @@
 .cart {
+  width: 100%;
   &_wrapper {
-    width: 1250px;
+    width: 100%;
     margin: auto;
   }
+  &_right {
+    height: auto;
+    width: 30%;
+    display: flex !important;
+  }
+  &_box{
+    display: flex  !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  &_cards {
+    width: 100% !important;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+.order-card {
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f0ef;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.order-card h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.details p {
+  margin: 10px 0;
+  color: #888;
+  font-size: 16px;
+}
+
+.price {
+  float: right;
+  color: #888;
+}
+
+.delivery {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: darkblue;
 }
 
 .cartItem {
@@ -11,7 +84,7 @@
   border: 1px solid silver;
   padding: 20px 50px;
   border-radius: 20px;
-  width: 70%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;

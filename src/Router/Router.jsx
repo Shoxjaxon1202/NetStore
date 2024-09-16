@@ -77,16 +77,20 @@ const Router = ({ setCount, handleLogin }) => {
       <Route path="/login" element={<Login handleLogin={handleLogin} />} />
 
       <Route path="/" element={<Home addGood={addGood} base={base} />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/home" element={<Home addGood={addGood} base={base} />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/elementItem" element={<Item />} />
-      {/* <Route path="/katalog" element={<Katalog />} /> */}
-      <Route path="/elementItem/:id" element={<Item base={base} />} />
-      <Route path="/allProduct" element={<AllProduct base={base} />} />
+      <Route
+        path="/elementItem/:id"
+        element={<Item base={base} addGood={addGood} />}
+      />
+      <Route
+        path="/allProduct"
+        element={<AllProduct base={base} addGood={addGood} />}
+      />
       <Route
         path="/cart"
-        element={<Cart deleteItem={deleteItem} cart={cart} />}
+        element={<Cart cart={cart} deleteItem={deleteItem} />}
       />
     </Routes>
   );
