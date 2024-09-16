@@ -1,0 +1,114 @@
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &_left {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &_title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 64px;
+    text-align: justify;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+  &_text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+  }
+  &_subtitle {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+  &_subtext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+  &_box {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 10px solid #2f2e30;
+    background-color: #000000;
+    color: white;
+  }
+
+  .slider-container {
+    width: 100%;
+    height: 100%;
+  }
+  .abouts {
+    height: 200px !important;
+  }
+
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+
+  &_subcard {
+    box-sizing: border-box;
+    width: 200px !important;
+    height: 170px !important;
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #00a3ff;
+      .about_box {
+        border: 10px solid #64c0f4;
+        background-color: white;
+        color: black !important;
+      }
+      .about_subtitle {
+        color: white !important;
+      }
+      .about_icon {
+        color: black !important;
+      }
+
+      .about_subtext {
+        color: white !important;
+      }
+    }
+  }
+
+  .about_icon {
+    width: 50px !important;
+    height: 50px !important;
+    transition: color 0.3s ease;
+  }
+}

@@ -1,0 +1,137 @@
+.contact {
+  &_intro {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 40px;
+  }
+  &_wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &_subtitle {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.5;
+  }
+  &_subtext {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  &_left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 10px;
+
+    width: 380px;
+    height: 440px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  &_title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  &_text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  &_card {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    &_intro {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &_hr {
+    width: 240px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  &_parentwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+  &_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 39px;
+    gap: 10px;
+    height: 440px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  &_input {
+    padding: 13px;
+    gap: 10px;
+
+    width: 400px;
+    height: 50px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 5px;
+  }
+  &_textarea {
+    padding: 13px;
+    gap: 10px;
+
+    width: 100%;
+    height: 200px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  &_btn {
+    padding: 10px 34px;
+    gap: 10px;
+
+    width: 193px;
+    height: 44px;
+
+    background: #00a3ff;
+    border-radius: 10px;
+    margin-left: auto;
+     
+    font-family: "Poppins" , sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fafafa;
+  }
+}

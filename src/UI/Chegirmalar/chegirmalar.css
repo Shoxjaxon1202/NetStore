@@ -1,0 +1,19 @@
+.chegirmalar {
+  width: 100%;
+}
+.chegirmalar_card {
+  height: 400px;
+}
+.chegirmalar .all {
+  background: rgb(9, 89, 201);
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  color: white;
+}
+.chegirmalar .all_card {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=chegirmalar.css.map */

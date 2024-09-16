@@ -1,0 +1,105 @@
+.footer {
+  width: 100%;
+  background-color: #000;
+  margin-top: 100px;
+}
+.footer_wrapper {
+  padding-top: 50px !important;
+  width: 1250px;
+  margin: auto;
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: end;
+  align-items: start;
+  gap: 20px;
+}
+.footer__brand, .footer__contact, .footer__about {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__question {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer__socials {
+  display: flex;
+  gap: 10px;
+}
+.footer__socials a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.footer__socials a:hover {
+  color: #1da1f2;
+}
+.footer__contact h4, .footer__about h4, .footer__question h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer__contact a, .footer__about a, .footer__question a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__contact a:hover, .footer__about a:hover, .footer__question a:hover {
+  text-decoration: underline;
+}
+.footer__contact form, .footer__about form, .footer__question form {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contact form input,
+.footer__contact form textarea, .footer__about form input,
+.footer__about form textarea, .footer__question form input,
+.footer__question form textarea {
+  font-size: 16px !important;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+.footer__contact form input:focus,
+.footer__contact form textarea:focus, .footer__about form input:focus,
+.footer__about form textarea:focus, .footer__question form input:focus,
+.footer__question form textarea:focus {
+  outline: none;
+  border-color: #1da1f2;
+}
+.footer__contact form input, .footer__about form input, .footer__question form input {
+  width: 200px;
+}
+.footer_btn {
+  width: 80px;
+  height: 30px;
+  background-color: #1da1f2;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.footer_btn:hover {
+  background-color: #0a84d3;
+}
+.footer__bottom {
+  grid-column: span 4;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 20px;
+}/*# sourceMappingURL=Footer.css.map */

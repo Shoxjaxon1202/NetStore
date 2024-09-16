@@ -1,0 +1,121 @@
+.footer {
+  width: 100%;
+  background-color: #000;
+  margin-top: 100px;
+
+  &_wrapper {
+    padding-top: 50px !important;
+    width: 1250px;
+    margin: auto;
+    color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: end;
+    align-items: start;
+    gap: 20px;
+  }
+
+  &__brand,
+  &__contact,
+  &__about
+ {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__question
+  {
+      display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
+
+    a {
+      color: #fff;
+      font-size: 20px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #1da1f2;
+      }
+    }
+  }
+
+  &__contact,
+  &__about,
+  &__question {
+    h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        font-size: 16px !important;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        background-color: #222;
+        color: #fff;
+
+        &:focus {
+          outline: none;
+          border-color: #1da1f2;
+        }
+      }
+      input {
+        width: 200px;
+      }
+    }
+  }
+
+  &_btn {
+    width: 80px;
+    height: 30px;
+    background-color: #1da1f2;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0a84d3;
+    }
+  }
+  &__bottom {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+}

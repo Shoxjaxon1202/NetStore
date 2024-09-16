@@ -1,0 +1,49 @@
+.cart {
+  &_wrapper {
+    width: 1250px;
+    margin: auto;
+  }
+}
+
+.cartItem {
+  margin-top: 20px;
+  font-family: sans-serif;
+  border: 1px solid silver;
+  padding: 20px 50px;
+  border-radius: 20px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  &_img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  &_middle {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &_right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &_title {
+    font-family: sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  &_price {
+    color: blue;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  &_discount {
+    color: red;
+    text-decoration: line-through;
+  }
+}

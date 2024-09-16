@@ -1,0 +1,101 @@
+.newProduct_title {
+  font-family: "Inter";
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 36px !important;
+  line-height: 48px !important;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.newProduct_card {
+  width: 100%;
+}
+.newProduct_title {
+  margin-bottom: 30px !important;
+  margin-top: 30px !important;
+}
+.newProduct_left {
+  position: relative;
+  background-image: url("../../assets/img/ps5-slim-goedkope-playstation_large 1.png");
+  background-size: 100% 70%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 520px;
+  width: 40%;
+  border-radius: 5px;
+}
+.newProduct_left_card {
+  width: 55%;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+.newProduct_right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  width: 60%;
+}
+.newProduct_top {
+  position: relative;
+  border-radius: 5px;
+  background-image: url("../../assets/img/attractive-woman-wearing-hat-posing-black-background 1.png");
+  background-size: 80% 70%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 100%;
+  background-color: #0d0d0d;
+}
+.newProduct_top_card {
+  width: 40%;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.newProduct_bottom {
+  position: relative;
+  width: 100%;
+  margin-top: 20px !important;
+}
+.newProduct_bottom_left {
+  width: 50%;
+  border-radius: 5px;
+  background-image: url("../../assets/img/Frame 707.png");
+  background-size: 60% 70%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 250px;
+  /* Text2 */
+  background-color: #000000;
+}
+.newProduct_bottom_left_card {
+  width: 40%;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.newProduct_bottom_right {
+  position: relative;
+  width: 50%;
+  border-radius: 5px;
+  background-image: url("../../assets/img/Frame 706.png");
+  background-size: 60% 70%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 250px;
+  /* Text2 */
+  background-color: #000000;
+}
+.newProduct_bottom_right_card {
+  width: 40%;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.newProduct_btn {
+  text-decoration: underline !important;
+}/*# sourceMappingURL=newProduct.css.map */
