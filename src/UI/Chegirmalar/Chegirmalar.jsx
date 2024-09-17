@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "./chegirmalar.scss";
 import { Autoplay } from "swiper/modules";
 import { Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
 const Chegirmalar = ({ base, addGood }) => {
   const settings = {
     dots: false,
@@ -31,7 +32,9 @@ const Chegirmalar = ({ base, addGood }) => {
           </Slider>
 
           <div className="all_card">
-            <button className="all">Barchasini ko'rish</button>
+            <NavLink to={"allproduct"}>
+              <button className="all">Barchasini ko'rish</button>
+            </NavLink>
           </div>
         </div>
       </div>

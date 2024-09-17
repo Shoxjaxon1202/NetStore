@@ -1,6 +1,6 @@
 import { Add, Delete, Remove } from "@mui/icons-material";
 import { Button } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 
 const CartItem = ({
   id,
@@ -13,25 +13,19 @@ const CartItem = ({
   cart,
   setCart,
 }) => {
-
-  
-  const increase = () => {
-    const updatedCart = cart.map((item) => {
-      if (item.id === id) {
-        return { ...item, quantity: item.quantity + 1 };
-      }
-      return item;
-    });
+  const increaseQuantity = () => {
+    const updatedCart = cart.map((item) =>
+      item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+    );
     setCart(updatedCart);
   };
 
-  const decrease = () => {
-    const updatedCart = cart.map((item) => {
-      if (item.id === id && item.quantity > 1) {
-        return { ...item, quantity: item.quantity - 1 };
-      }
-      return item;
-    });
+  const decreaseQuantity = () => {
+    const updatedCart = cart.map((item) =>
+      item.id === id && item.quantity > 1
+        ? { ...item, quantity: item.quantity - 1 }
+        : item
+    );
     setCart(updatedCart);
   };
 
@@ -43,24 +37,22 @@ const CartItem = ({
         <p className="cartItem_text">category: {category}</p>
       </div>
       <div className="cartItem_middle">
-        <Button onClick={decrease} variant="outlined">
+        <Button variant="outlined" onClick={decreaseQuantity}>
           <Remove />
         </Button>
         <p className="cartItem_quantity">{quantity}</p>
-        <Button onClick={increase} variant="outlined">
+        <Button variant="outlined" onClick={increaseQuantity}>
           <Add />
         </Button>
       </div>
       <div className="cartItem_right">
         <Button
-          onClick={() => {
-            deleteItem(id);
-          }}
+          onClick={() => deleteItem(id)}
           color="error"
           variant="contained">
           <Delete />
         </Button>
-        <h3 className="cartItem_price">{price * quantity}$</h3>
+        <h3 className="cartItem_price">{(price * quantity).toFixed(2)}$</h3>
         <h4 className="cartItem_discount">
           {Math.floor(price * quantity + price / 3)}$
         </h4>

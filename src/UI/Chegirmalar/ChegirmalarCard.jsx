@@ -24,9 +24,9 @@ const ChegirmalarCard = ({
   category,
 }) => {
   return (
-    <Card className="chegirmalar_card" sx={{ maxWidth: 345 }}>
+    <Card className="chegirmalar_card" sx={{ maxWidth: 300 , maxHeight: 350}}>
       <NavLink to={`/elementItem/${id}`}>
-      <CardMedia sx={{ height: 180 }} image={image} title="green iguana" />
+      <CardMedia sx={{ height: 150 }} image={image} title="green iguana" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title.slice(0, 30)}

@@ -1,12 +1,23 @@
 import { Typography } from "@mui/material";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "../styles/cart.scss";
 import CartItem from "../UI/CartItem/CartItem";
-import { info } from "sass";
-const Cart = ({ cart, deleteItem }) => {
-  console.log(cart);
+
+const Cart = ({ cart, deleteItem , setCart }) => {
+  const [count, setCount] = useState(0);
+  const [total, setTotal] = useState(0);
+  console.log(setCart);
   
+  useEffect(() => {
+    setCount(cart.length);
+    const totalAmount = cart.reduce(
+      (acc, item) => acc + item.price * item.quantity,
+      0
+    );
+    setTotal(totalAmount);
+  }, [cart]);
+
   return (
     <div className="cart">
       <div className="cart_wrapper">
@@ -18,33 +29,34 @@ const Cart = ({ cart, deleteItem }) => {
 
         <div className="cart_box">
           <div className="cart_cards">
-            {cart?.map((elem) =>
-              cart?.length > 0 ? (
-                <CartItem
-                  deleteItem={deleteItem}
-                  key={elem?.id}
-                  {...elem}
-                />
-              ) : (
-                `Malumot bosh`
-              )
-            )}
+            {cart.map((elem) => (
+              <CartItem
+                deleteItem={deleteItem}
+                key={elem.id}
+                {...elem}
+                cart={cart}
+                setCart={setCart}
+              />
+            ))}
           </div>
           <div className="cart_right">
-            <div class="order-card">
+            <div className="order-card">
               <h2>Buyurtmangiz</h2>
-              <div class="details">
+              <div className="details">
                 <p>
-                  Mahsulotlar (0) <span class="price">0 so'm</span>
+                  Mahsulotlar ({count}){" "}
+                  <span className="price">{total.toFixed(2)} $</span>
                 </p>
-                <button class="delivery">
+                <button className="delivery">
                   Yetkazib berish M05 29 (Ertaga)
                 </button>
                 <p>
-                  Jami <span class="price">0 so'm</span>
+                  Jami <span className="price">{total.toFixed(2)} $</span>
                 </p>
               </div>
-              <button class="checkout-btn">Rasmiylashtirishga o‘tish</button>
+              <button className="checkout-btn">
+                Rasmiylashtirishga o‘tish
+              </button>
             </div>
           </div>
         </div>

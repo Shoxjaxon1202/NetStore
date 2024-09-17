@@ -58,7 +58,12 @@ const Contact = () => {
                 <h3 className="contact_title">Bizga Qo'ng'iroq Qiling</h3>
               </div>
               <p className="contact_text">Biz 24/7 kun tartibida ishlaymiz</p>
-              <p className="contact_text">Raqam: +998917777777</p>
+              <p className="contact_text">
+                Raqam:{" "}
+                <a href="tel:+998917777777" className="contact_link">
+                  +998917777777
+                </a>
+              </p>
             </div>
             <span className="contact_hr"></span>
 
@@ -68,7 +73,12 @@ const Contact = () => {
                 <h3 className="contact_title">Bizga Email Yozing</h3>
               </div>
               <p className="contact_text">Biz 24/7 kun tartibida ishlaymiz</p>
-              <p className="contact_text">Email: example@example.com</p>
+              <p className="contact_text">
+                Email:{" "}
+                <a href="mailto:example@example.com" className="contact_link">
+                  example@example.com
+                </a>
+              </p>
             </div>
           </div>
         </div>

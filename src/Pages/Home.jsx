@@ -13,8 +13,8 @@ const Home = ({ base, addGood }) => {
       <Katalog />
       <Chegirmalar addGood={addGood} base={base} />
       <NewProduct />
-      <AllProduct base={base}/>
-      <End/>
+      <AllProduct addGood={addGood} base={base} />
+      <End />
     </div>
   );
 };

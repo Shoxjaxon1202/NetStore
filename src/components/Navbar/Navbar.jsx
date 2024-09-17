@@ -71,24 +71,24 @@ const Navbar = ({ count, handleLogin }) => {
                 Bosh sahifa
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/elementItem/3"
-                className="navbar_link block py-2 px-0 text-gray-900 rounded hover:bg-gray-100 dark:text-white">
+                className="navbar_link block py-2 px-0 text-gray-900 rounded hover:bg-gray-100  md:hover:bg-transparent dark:text-white">
                 Katalog
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to="/about"
-                className="navbar_link block py-2 px-0 text-gray-900 rounded hover:bg-gray-100 dark:text-white">
+                className="navbar_link block py-2 px-0 text-gray-900 rounded hover:bg-gray-100  md:hover:bg-transparent dark:text-white">
                 Haqimizda
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/cart"
-                className="navbar_link cartcha block py-2 px-0 text-gray-900 rounded hover:bg-gray-100 dark:text-white">
+                className="navbar_link cartcha block py-2 px-0 text-gray-900 rounded hover:bg-gray-100  md:hover:bg-transparent dark:text-white">
                 <ShoppingCart color="info" />
                 <Typography className="count">{count}</Typography>
               </NavLink>
@@ -96,7 +96,7 @@ const Navbar = ({ count, handleLogin }) => {
             <li>
               <NavLink
                 to="/contact"
-                className="navbar_link block py-2 px-0 text-gray-900 rounded hover:bg-gray-100 dark:text-white">
+                className="navbar_link block py-2 px-0 text-gray-900 rounded hover:bg-gray-100  md:hover:bg-transparent dark:text-white">
                 Aloqa
               </NavLink>
             </li>

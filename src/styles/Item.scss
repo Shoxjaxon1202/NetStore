@@ -2,6 +2,9 @@
     width: 100%;
 
     &_wrapper{
-       min-height: 500px !important;
+    //    min-height: 500px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     }
 }

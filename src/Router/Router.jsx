@@ -12,6 +12,7 @@ import Item from "../Pages/Item";
 import AllProduct from "../UI/AllProduct/AllProduct";
 import Katalog from "../Pages/Katalog";
 import Register from "../Pages/Register";
+import Barchasi from "../UI/AllProduct/Barchasi";
 
 const Router = ({ setCount, handleLogin }) => {
   const [base, setBase] = useState([]);
@@ -75,7 +76,7 @@ const Router = ({ setCount, handleLogin }) => {
       <Route path="*" element={<NotFound />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login handleLogin={handleLogin} />} />
-
+      <Route path="/allproduct" element={<Barchasi base={base} addGood={addGood} />} />
       <Route path="/" element={<Home addGood={addGood} base={base} />} />
       <Route path="/home" element={<Home addGood={addGood} base={base} />} />
       <Route path="/about" element={<About />} />
@@ -90,7 +91,7 @@ const Router = ({ setCount, handleLogin }) => {
       />
       <Route
         path="/cart"
-        element={<Cart cart={cart} deleteItem={deleteItem} />}
+        element={<Cart setCart={setCart} cart={cart} deleteItem={deleteItem} />}
       />
     </Routes>
   );

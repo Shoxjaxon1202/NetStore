@@ -54,9 +54,9 @@ const Item = ({ base }) => {
               component={"div"}
               padding={"20px"}
               borderRadius={"20px"}
-              bgcolor={"#f5f5f5"}>
+             >
               <CardMedia
-                sx={{ height: "135px" }}
+                sx={{ height: "100px" }}
                 component={"image"}
                 image={Item[0]?.image}
               />
@@ -65,9 +65,9 @@ const Item = ({ base }) => {
               component={"div"}
               padding={"20px"}
               borderRadius={"20px"}
-              bgcolor={"#f5f5f5"}>
+             >
               <CardMedia
-                sx={{ height: "135px" }}
+                sx={{ height: "100px" }}
                 component={"image"}
                 image={Item[0]?.image}
               />
@@ -76,9 +76,9 @@ const Item = ({ base }) => {
               component={"div"}
               padding={"20px"}
               borderRadius={"20px"}
-              bgcolor={"#f5f5f5"}>
+             >
               <CardMedia
-                sx={{ height: "135px" }}
+                sx={{ height: "100px" }}
                 component={"image"}
                 image={Item[0]?.image}
               />
@@ -87,23 +87,22 @@ const Item = ({ base }) => {
               component={"div"}
               padding={"20px"}
               borderRadius={"20px"}
-              bgcolor={"#f5f5f5"}>
+             >
               <CardMedia
-                sx={{ height: "135px" }}
+                sx={{ height: "100px" }}
                 component={"image"}
                 image={Item[0]?.image}
               />
             </Typography>
           </Typography>
           <Typography
-            height={"800px"}
-            width={"80%"}
-            bgcolor={"#f5f5f5"}
+            height={"500px"}
+            width={"60%"}
             borderRadius={"20px"}
             padding={"20px"}
             component={"div"}>
             <CardMedia
-              sx={{ height: "82%" }}
+              sx={{ height: "70%" , width: "80%"}}
               component={"image"}
               image={Item[0]?.image}
             />
